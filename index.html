@@ -1,1 +1,317 @@
-<h1>github pages test </h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta />
+	<title>Frutería Yulay</title>
+<style>
+  :root {
+    --color-bg: #ffffff;
+    --color-text: #374151;
+    --color-text-muted: #6b7280;
+    --color-primary: #10b981;
+    --color-primary-hover: #059669;
+    --color-shadow: rgba(0, 0, 0, 0.07);
+    --radius: 0.75rem;
+    --max-width: 1200px;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --card-bg: #fafafa;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    line-height: 1.6;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--color-bg);
+    box-shadow: 0 1px 6px var(--color-shadow);
+    z-index: 100;
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    user-select: none;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--color-primary);
+    outline: none;
+  }
+
+  main {
+    padding: 4rem 1rem 6rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero h1 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+
+  .hero p {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  section {
+    margin-bottom: 4rem;
+  }
+
+  section h2 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 0.25rem;
+    width: fit-content;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 8px var(--color-shadow);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+
+  .card:hover, .card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px var(--color-shadow);
+    outline: none;
+  }
+
+  .card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-name {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--color-text);
+    padding: 0.75rem 1rem 1rem;
+    user-select: none;
+  }
+
+  #contacto p {
+    max-width: 600px;
+    margin-top: 0;
+    font-size: 1rem;
+    color: var(--color-text-muted);
+  }
+
+  #contacto a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  #contacto a:hover,
+  #contacto a:focus {
+    color: var(--color-primary-hover);
+    outline: none;
+  }
+
+  @media (max-width: 640px) {
+    .hero h1 {
+      font-size: 2.25rem;
+    }
+    .card img {
+      height: 120px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav aria-label="Main navigation">
+      <div class="logo" tabindex="0" aria-label="Frutería Yulay logo">Frutería Yulay</div>
+
+      <ul>
+        <li><a href="UBICACION.html">donde nos ubicamos</a></li>
+        <li><a href="HORARIOS.html">horarios</a></li>
+        <li><a href="contacto pag.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section>
+	  <h2> Como comenzamos:</h2>
+    <p>comenzamos hace poco pero con el tiempo que llevamos hemos tratado de dar una buena calidad de nuestros productos y asi tener tu la confianza de cada compra y con cada emprendedor que nos relacioamos tine los mejores productos y la atencion al cliente es mejorada cada dia </p>
+  </section>
+
+  <section>
+    <h2 id=>Frutas</h2>
+    <div>
+      <article>
+        <img src="PIÑA.jpg" alt="110" width="363" height="373" heitgh="110"/>
+        <h1>piña</h1>
+      </article>
+      <article>
+        <img src="MANZANA.jpg"alt="40" width="366" height="390" loading="30" />
+        <h1>manzana</h1>
+      </article>
+      <article>
+        <img src="SANDA.jpg" alt="300" height="460" />
+		  <h2>sandia</h2>
+      </article>
+      <article>
+        <img src="NARANJA.jpg" alt="50" width="39%" height="201"><img/>
+        <h1>naranja</h1>
+      </article>
+	  <article>
+        <img src="JICAMA.jpg"alt="60" width="336" height="201" />
+        <h1>jicama</h1>
+      </article>
+	  <article>
+        <img src="TORONJA.jpg"alt="60" width="370" height="185" />
+        <h1>toronja</h1>
+      </article>
+	  <article>
+        <img src="MANZANAAMA.jpg"alt="60" width="300" height="160" />
+        <h1>manzana amarilla</h1>
+      </article>
+    </div>
+  </section>
+
+	
+  <section>
+    <h2>Verduras</h2>
+    <div>
+      <p> las verduras que puedes encontrar en nuestra tienda</p>
+      <article>
+        <img src="CHAYOTE.jpg" alt="300" width="48%" height="224"><img width="88%"/>
+	    <h1>chayote </h1>
+      </article>
+      <article>
+        <img src="TOMATE VERDE.jpg" alt="40" width="323" height="167"><img/>
+        <div>Tomate</div>
+      </article>
+      <article>
+        <img src="CHILE SERRANO.jpg"alt="60" width="327" height="167" />
+        <h1>chile serrano</h1>
+      </article>
+      <article>
+        <img src="HABANERO.jpg" alt="69" width="331" height="172"/>
+        <h1>habanero</h1>
+      </article>
+		  <article>
+        <img src="LIMON.jpg"alt="60" width="408" height="211" />
+        <h1>limon</h1>	
+      </article> 
+  <article>
+        <img src="PEREJIL.jpg"alt="60" width="225" height="129" />
+        <h1>perejil</h1>
+      </article>
+  <article>
+        <img src="HIERBAS DE OLOR.jpg"alt="60" width="359" height="189" />
+	  <h1>hierbas de olor</h1>
+      </article>
+	  <article>
+        <img src="AJO.jpg"alt="60" width="321" height="170" />
+        <h1>ajo</h1>
+      </article>
+  <article>
+        <img src="LECHUGA.jpg"alt="60" width="276" height="172" />
+	  
+        <h1>lechuga</h1>
+      </article>
+	  <article>
+        <img src="PEPINO.jpg"alt="60" width="423" height="199" />
+        <h1>pepino</h1>
+      </article>
+		<h1>Ideas de recetas para comer frutas y verduras</h1>
+		<p>Banderillas de frutas</p>
+		<P>Un snack saludable que lo puedes preparar de la siguiente manera</P>
+		<p>ingredientes:</p>
+		<p>fresas</p>
+		<p>piña</p>
+		<p>sandia</p>
+		<p>melon</p>
+		<p>naranja</p>
+		<p>palitos de madera</p>
+		<p>chocolate</p>
+		<p>chamoy o miguelito</p>
+		<h2>modo de preparacion</h2>
+		<p>1-lava con agua limpia las frutas y verduras</p>
+		<p>2-corta la fruta en pequeños trozoz</p>
+		<p>3-ve agregando a los palitos de madera la fruta y co creatividad combinala</p>
+		<p>4-llego el momento de disfrutar y preparar nuestra banderilla de frutas al gusto </p>
+		
+		  
+    </div>
+  </section>
+</main>
+</body>
+</html>
+
